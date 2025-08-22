@@ -1,0 +1,33 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/index.html
+index 0000000000000000000000000000000000000000..47037684b7fc21f087d1dba743434a7fd7f80bdb 100644
+--- a//dev/null
++++ b/index.html
+@@ -0,0 +1,24 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <title>TaylorMade Club Guide</title>
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <h1>TaylorMade Club Guide</h1>
++    <div id="shaft-stiffness-control">
++      <label for="stiffness">Shaft stiffness:</label>
++      <select id="stiffness">
++        <option value="L">L (Ladies)</option>
++        <option value="A">A (Senior)</option>
++        <option value="R" selected>R (Regular)</option>
++        <option value="S">S (Stiff)</option>
++        <option value="X">X (Extra Stiff)</option>
++      </select>
++      <span id="stiffness-display"></span>
++    </div>
++    <div id="club-list"></div>
++    <script src="script.js"></script>
++  </body>
++</html>
+ 
+EOF
+)
