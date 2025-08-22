@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#shaft-stiffness-control {
+  margin-bottom: 20px;
+}
+
+#club-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.club-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+}
+
+.club-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
